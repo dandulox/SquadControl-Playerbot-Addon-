@@ -47,7 +47,7 @@ end)
 
 UNBOT2 = UNBOT2 or {}
 
-UNBOT2.VERSION = "1.0.0"
+UNBOT2.VERSION = "2.0.13"
 UNBOT2.ADDON_PREFIX = "UNBOT2"
 
 UNBOT2.CLASS_ORDER = {
@@ -1705,9 +1705,7 @@ local function CreateSettings()
     Label(status, "Betriebsart", "GameFontNormal", 12, -70); ui.settingsMode = Label(status, "Chatmodus", "GameFontHighlight", 176, -70)
     Label(status, "Gruppenmitglieder", "GameFontNormal", 12, -98); ui.settingsRoster = Label(status, "0", "GameFontHighlight", 176, -98)
     Label(status, "Aktiver Zielbot", "GameFontNormal", 12, -126); ui.settingsBot = Label(status, "Keiner", "GameFontHighlight", 176, -126)
-    Label(status, "Slash-Befehle", "GameFontNormal", 12, -154); Label(status, "/unbot, /ub", "GameFontHighlight", 176, -154)
-    Label(status, "Die Server-Brücke ist optional. Ohne sie arbeitet UNBOT vollständig über Playerbot-Chatbefehle.", "GameFontNormalSmall", 12, -181):SetWidth(280)
-
+    Label(status, "Slash-Befehle", "GameFontNormal", 12, -154); Label(status, "/squadcontrol, /unbot, /ub", "GameFontHighlight", 176, -154)
     Label(status, GetLocale and GetLocale() == "deDE" and "GitHub-Repository" or "GitHub repository", "GameFontNormal", 12, -181)
     local repository = EditBox(status, 12, -205, 280, "")
     repository:SetText("https://github.com/dandulox/SquadControl")
